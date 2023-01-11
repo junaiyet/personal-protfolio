@@ -1,0 +1,360 @@
+@media (min-width: 320px) and (max-width: 575.98px) {
+  /* ==============================
+        Nav part Start
+================================= */
+  nav button {
+    color: #fff !important;
+  }
+  nav ul {
+    text-align: center;
+    background: #1f1f1f !important;
+    margin-top: 10px;
+  }
+  #banner-part .overlay .text h1 {
+    font-size: 39px;
+  }
+  #banner-part .overlay #typed-string {
+    font-size: 29px;
+  }
+  #banner-part .overlay .text h4 {
+    font-size: 16px;
+  }
+  #banner-part .overlay .text a {
+    font-size: 16px;
+  }
+  #banner-part .overlay {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+  #banner-part .overlay #typed-string::after {
+    font-size: 35px;
+  }
+  #banner-part .social {
+    bottom: 20px;
+  }
+  /* ==============================
+        Nav part End
+================================= */
+  /* ==============================
+        About part Start
+================================= */
+  #about-part {
+    padding: 40px 0;
+  }
+  #about-part .img img {
+    width: 100%;
+  }
+  #about-part h2 {
+    margin-bottom: 0;
+  }
+  #about-part p {
+    text-align: justify;
+  }
+  #about-part ul li {
+    padding: 0;
+  }
+  .offset-1 {
+    margin-left: 0;
+  }
+  /* ==============================
+        About part End
+================================= */
+  /* ==============================
+        Portfolio part Start
+================================= */
+  #port-part {
+    padding: 20px 0;
+  }
+  #port-part .mixit-menu ul {
+    border: 0;
+  }
+  #port-part .item {
+    width: 100%;
+  }
+  /* ==============================
+        Portfolio part End
+================================= */
+  /* ==============================
+        Service part Start
+================================= */
+  #service-part {
+    padding: 40px 0;
+    background: #0d0d0d;
+  }
+  /* ==============================
+        Service part End
+================================= */
+  /* ==============================
+        Footer part Start
+================================= */
+  footer {
+    padding-top: 20px;
+  }
+  footer h2 {
+    margin-bottom: 20px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer .img {
+    display: none;
+  }
+  /* ==============================
+        Footer part End
+================================= */
+  /* ==============================
+        Color changer part Start
+================================= */
+  .color-changer {
+    left: 5px;
+  }
+  .color-changer .icon {
+    padding: 5px;
+  }
+  /* ==============================
+        Color changer part End
+================================= */
+  /* ==============================
+        BacktoTop part End
+================================= */
+  .backtotop {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  /* ==============================
+        BacktoTop part End
+================================= */
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* ==============================
+        Nav part Start
+================================= */
+  nav button {
+    color: #fff !important;
+  }
+  nav ul {
+    text-align: center;
+    background: #1f1f1f !important;
+    margin-top: 10px;
+  }
+  #banner-part .overlay #typed-string {
+    font-size: 46px;
+  }
+  #banner-part .overlay {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+  /* ==============================
+        Nav part End
+================================= */
+  /* ==============================
+        About part Start
+================================= */
+  #about-part {
+    padding: 40px 0;
+  }
+  #about-part .img img {
+    width: 100%;
+  }
+  #about-part h2 {
+    margin-bottom: 0;
+  }
+  #about-part p {
+    text-align: justify;
+  }
+  .offset-1 {
+    margin-left: 0;
+  }
+  /* ==============================
+        About part End
+================================= */
+  /* ==============================
+        Portfolio part Start
+================================= */
+  #port-part {
+    padding: 20px 0;
+  }
+  #port-part .mixit-menu ul {
+    border: 0;
+  }
+  #port-part .item {
+    width: 100%;
+  }
+  /* ==============================
+        Portfolio part End
+================================= */
+  /* ==============================
+        Service part Start
+================================= */
+  #service-part {
+    padding: 40px 0;
+    background: #0d0d0d;
+  }
+  /* ==============================
+        Service part End
+================================= */
+  /* ==============================
+        Footer part Start
+================================= */
+  footer {
+    padding-top: 20px;
+  }
+  footer h2 {
+    margin-bottom: 20px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer .img {
+    display: none;
+  }
+  /* ==============================
+        Footer part End
+================================= */
+  /* ==============================
+        Color changer part Start
+================================= */
+  .color-changer {
+    left: 10px;
+  }
+  /* ==============================
+        Color changer part End
+================================= */
+  /* ==============================
+        BacktoTop part End
+================================= */
+  .backtotop {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  /* ==============================
+        BacktoTop part End
+================================= */
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* ==============================
+        About part Start
+================================= */
+  #about-part .img img {
+    width: 100%;
+  }
+  #about-part p {
+    text-align: justify;
+  }
+  .offset-1 {
+    margin-left: 0;
+  }
+  /* ==============================
+        About part End
+================================= */
+  /* ==============================
+        Portfolio part Start
+================================= */
+  #port-part .item {
+    width: 45%;
+  }
+  /* ==============================
+        Portfolio part End
+================================= */
+  /* ==============================
+        Footer part Start
+================================= */
+  footer form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer .img {
+    display: none;
+  }
+  /* ==============================
+        Footer part End
+================================= */
+  /* ==============================
+        Color changer part Start
+================================= */
+  .color-changer {
+    left: 10px;
+  }
+  /* ==============================
+        Color changer part End
+================================= */
+  /* ==============================
+        BacktoTop part End
+================================= */
+  .backtotop {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  /* ==============================
+        BacktoTop part End
+================================= */
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* ==============================
+        About part Start
+================================= */
+  #about-part .img img {
+    width: 100%;
+  }
+  #about-part h2 {
+    margin-top: 0;
+  }
+  #about-part p {
+    text-align: justify;
+  }
+  .offset-1 {
+    margin-left: 3%;
+  }
+  /* ==============================
+        About part End
+================================= */
+  /* ==============================
+        Portfolio part Start
+================================= */
+  #port-part .item {
+    width: 46%;
+  }
+  /* ==============================
+        Portfolio part End
+================================= */
+  /* ==============================
+        Footer part Start
+================================= */
+  footer form {
+    margin-bottom: 20px;
+  }
+  /* ==============================
+        Footer part End
+================================= */
+  /* ==============================
+        Color changer part Start
+================================= */
+  .color-changer {
+    left: 10px;
+  }
+  /* ==============================
+        Color changer part End
+================================= */
+  /* ==============================
+        BacktoTop part End
+================================= */
+  .backtotop {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  /* ==============================
+        BacktoTop part End
+================================= */
+}

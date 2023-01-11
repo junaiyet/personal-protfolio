@@ -1,0 +1,878 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+}
+
+.title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+.title h2::before {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    width: 8%;
+    height: 5px;
+    background: #fff;
+    transform: translateX(-80%);
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+}
+.title h2::after {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 51%;
+    width: 8px;
+    height: 5px;
+    background: #fff;
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+}
+
+/* ==========================
+    Preloader Part Start
+============================= */
+.preloder{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.preloder .bar{
+    width: 400px;
+    height: 10px;
+}
+.preloder .line {
+    width: 0;
+    height: 3px;
+    background: #fff;
+    animation: progress 1s;
+    -webkit-animation: progress 1s;
+}
+@keyframes progress{
+    0%{
+      width: 0;
+
+    }
+    80%{
+        width: 260px;
+        background: linear-gradient(90deg, rgba(221,221,208,1) 0%, rgba(193,0,0,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    100%{
+       width: 300px;
+       background: linear-gradient(90deg, rgba(221,221,208,1) 0%, rgba(193,0,0,1) 83%, rgba(255,255,255,1) 100%);
+    }
+}
+/* ==========================
+    Preloader Part End
+============================= */
+/* ===============================
+        Nav Part Start
+================================== */
+nav {
+    padding: 0 !important;
+    position: absolute !important;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff !important;
+    transition: all linear .4s !important;
+    -webkit-transition: all linear .4s !important;
+    -moz-transition: all linear .4s !important;
+    -ms-transition: all linear .4s !important;
+    -o-transition: all linear .4s !important;
+    position: relative;
+}
+nav ul li a::before{
+    position: absolute;
+    content: '';
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 2px;
+    background:#fff;
+    opacity: 0;
+    transition: all linear .4s;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+nav ul li a:hover:before{
+    opacity: 1;
+}
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    bottom: 4px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 2px;
+    background:#fff;
+    opacity: 0;
+    transition: all linear .4s;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+nav ul li a:hover:after{
+    opacity: 1;
+}
+/* ===============================
+        Nav Part End
+================================== */
+
+/* ==========================
+    Banner Part Start
+============================= */
+#banner-part {
+    background: url(../images/banner.png)no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#banner-part #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner-part .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 230px;
+    padding-bottom: 170px;
+}
+
+#banner-part .overlay .text {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#banner-part .overlay .text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+
+}
+
+#banner-part .overlay #typed-string {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+#banner-part .overlay #typed-string::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #fff;
+}
+
+#banner-part .overlay .text h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+#banner-part .overlay .text a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+#banner-part .overlay .text a:hover {
+    background: #2c5f2d;
+    border-color: #2c5f2d;
+    color: #fff;
+
+}
+
+#banner-part .social {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    width: 30px;
+}
+
+#banner-part .social a {
+    color: #fff;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#banner-part .social a:hover {
+    background: #2c5f2d;
+}
+
+/* ==========================
+    Banner Part End
+============================= */
+/* ==========================
+    About Part Start
+============================= */
+#about-part {
+    padding: 60px 0;
+    background: #0d0d0d;
+}
+
+#about-part h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#about-part p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about-part h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about-part ul li {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    margin-right: 5px;
+    background: #2c5f2d;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+    About Part End
+============================= */
+/* ==========================
+    PortfolioPart Start
+============================= */
+#port-part {
+    padding: 40px 0;
+    background: #000;
+    ;
+}
+
+#port-part .mixit-menu {
+    text-align: center;
+}
+
+#port-part .mixit-menu ul {
+    margin-top: 45px;
+    text-align: center;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+#port-part .mixit-menu ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#port-part .mixit-menu ul li.mixitup-control-active {
+    background: #2c5f2d;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+#port-part .main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#port-part .item {
+    width: 30.64%;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+}
+
+#port-part .item img {
+    width: 100%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#port-part .item:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#port-part .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 24, 24, 0.7);
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#port-part .item:hover .overlay {
+    opacity: 1;
+}
+
+#port-part .item .overlay .text a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#port-part .item .overlay .text a:hover {
+    background: #fff;
+    color: #2c5f2d;
+}
+
+#port-part .item .overlay .text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+/* ==========================
+    Portfolio Part End
+============================= */
+/* ==========================
+    Services Part Start
+============================= */
+#service-part {
+    padding: 60px 0;
+    background: #0d0d0d;
+}
+
+#service-part .item {
+    padding: 20px 10px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 45px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#service-part .item:hover {
+    background: #000;
+}
+
+#service-part .item .img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#service-part .item .img img {
+    width: 60px;
+    height: 60px;
+}
+
+#service-part .item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#service-part .item ul {
+    text-align: center;
+}
+
+#service-part .item ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* ==========================
+    Services Part End
+============================= */
+/* ==========================
+    Color changer Part Start
+============================= */
+.color-changer {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+}
+.color-changer .item{
+    background: #1f1f1f;
+    display: flex;
+}
+.color-changer .icon{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+.color-changer .icon .fa-cog{
+    animation: round 1s infinite;
+    -webkit-animation: round 2s linear infinite;
+}
+@keyframes round{
+    from{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+to{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+.color-changer .selector-color{
+    display: none;
+}
+.color-changer .color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: all linear 4s;
+    -webkit-transition: all linear 4s;
+    -moz-transition: all linear 4s;
+    -ms-transition: all linear 4s;
+    -o-transition: all linear 4s;
+}
+.color-changer .yellow{
+    background: #fec600;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.color-changer .tomato{
+    background: #2c5f2d;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.color-changer .light{
+    background: #990011;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.color-changer .blue{
+    background: #fc766a;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+/* ==========================
+    Color changer Part Start
+============================= */
+/* ==========================
+    Back to top Part Start
+============================= */
+.backtotop{
+    color: #fff;
+    background: #1f1f1f;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.backtotop:hover{
+    color: #fff;
+}
+.backtotop i{
+    font-size: 20px;
+    color: #fff;
+}
+/* ==========================
+    Back to top Part End
+============================= */
+/* ==========================
+    Cursor  Part Start
+============================= */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -1px;
+    left: -1px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+/* ==========================
+    Cursor  Part End
+============================= */
+
+/* ==========================
+    Footer Part Start
+============================= */
+footer {
+    background: #000;
+}
+
+footer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+footer p span {
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-right: 10px;
+}
+
+footer form {
+    margin-top: 30px;
+}
+
+footer form input {
+    background: transparent;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+footer form input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+footer form textarea {
+    background: transparent;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    height: 150px;
+    resize: none;
+}
+
+footer form textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+footer form button {
+    padding: 15px 20px;
+    border: 0;
+    background: #2c5f2d;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+footer .img {
+    margin-left: 30px;
+}
+
+footer .img img {
+    width: 105%;
+    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    -o-transform: translateX(-5%);
+}
+
+footer .bottom p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    background: #0d0d0d;
+    margin: 0;
+}
+footer .bottom p span{
+    color: #2c5f2d;
+}
+
+/* ==========================
+    Footer Part End
+============================= */

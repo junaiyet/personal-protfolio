@@ -1,0 +1,4 @@
+font-family: 'Montserrat', sans-serif;
+
+
+color code: #2A3132
